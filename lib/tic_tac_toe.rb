@@ -30,7 +30,7 @@ def position_taken?(board, index)
 end
 
 def valid_move?(board, index)
-  return index.between?(-1, 8) && !position_taken?(board, index)
+  return index.between?(0, 8) && !position_taken?(board, index)
 end
 
 def turn(board)
