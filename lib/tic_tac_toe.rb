@@ -54,11 +54,8 @@ def current_player(board)
 end
 
 def won?(board)
-  x_combo = false
-  o_combo = false
-  winning_combo = []
-  WIN_COMBINATIONS.each { |x| 
-    return  winning_combo = x if x_combo = x.all? { |y| board[y] == "X" } || o_combo = x.all? { |y| board[y] == "O" }  
+  WIN_COMBINATIONS.each { |x|
+    return x if x.all? { |y| board[y] == "X" } || x.all? { |y| board[y] == "O" }
   }
     return false
 end
