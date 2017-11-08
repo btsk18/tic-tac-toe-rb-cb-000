@@ -53,6 +53,12 @@ def current_player(board)
   return turn_count(board) % 2 == 0 ? "X" : "O"
 end
 
-def won?(board) 
-
+def won?(board)
+  x_combo = false
+  o_combo = false
+  winning_combo = []
+  WIN_COMBINATIONS.each { |x| 
+    return  winning_combo = x if x_combo = x.all? { |y| board[y] == "X" } || o_combo = x.all? { |y| board[y] == "O" }  
+  }
+    return false
 end
