@@ -74,5 +74,5 @@ end
 
 def winner(board)
   winning_combo = won?(board)
-  return board[winning_combo.first]
+  return !winning_combo ? false : board[winning_combo.first]
 end
