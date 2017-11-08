@@ -63,3 +63,7 @@ end
 def full?(board)
   return board.all? { |x| x != " " }
 end
+
+def draw?(board)
+  return full?(board) && !won?(board) ? true : false
+end
