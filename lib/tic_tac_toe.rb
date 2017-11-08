@@ -59,3 +59,7 @@ def won?(board)
   }
     return false
 end
+
+def full?(board)
+  return board.all? { |x| x != " " }
+end
