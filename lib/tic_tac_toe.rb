@@ -76,3 +76,6 @@ def winner(board)
   winning_combo = won?(board)
   return !winning_combo ? nil : board[winning_combo.first]
 end
+
+def play(board)
+end
