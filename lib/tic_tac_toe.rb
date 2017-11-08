@@ -37,6 +37,7 @@ def turn(board)
   puts "Enter a position 1 - 9"
   input = gets.chomp
   index = input_to_index(index)
+  puts index
   if valid_move?(board, index)
     move(board, index, "X")
     puts display_board(board)
